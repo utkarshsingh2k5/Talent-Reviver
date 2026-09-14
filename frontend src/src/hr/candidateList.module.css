@@ -1,0 +1,94 @@
+.container {
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+.backBtn {
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.tableWrapper {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.candidateTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.candidateTable th {
+    background: #f8f9fa;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #666;
+    border-bottom: 2px solid #eee;
+}
+
+.candidateTable td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.statusBadge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: #e1f5fe;
+    color: #0288d1;
+}
+
+.viewBtn {
+    background: #fff;
+    border: 1px solid #3498db;
+    color: #3498db;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.viewBtn:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+.noData {
+    text-align: center;
+    padding: 40px !important;
+    color: #999;
+}
+
+.loader {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 50px;
+}

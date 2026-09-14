@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f6f8fb; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: #ffffff; border-radius: 12px; padding: 25px; border: 1px solid #e0e0e0; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        h2 { color: #2c3e50; }
+        p { color: #555; line-height: 1.6; }
+        .btn { display: inline-block; padding: 12px 22px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 8px 8px 0 0; }
+        .btn-yes { background-color: #2ecc71; color: #ffffff; }
+        .btn-no { background-color: #e0e0e0; color: #333333; }
+        .footer { font-size: 12px; color: #888; margin-top: 25px; text-align: center; border-top: 1px solid #eee; padding-top: 10px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Hi <span th:text="${candidateName}">there</span>,</h2>
+    <p>Just following up on our note about the <strong th:text="${jobTitle}">role</strong> opportunity -
+        we didn't hear back and wanted to check in one more time.</p>
+    <div>
+        <a class="btn btn-yes" th:href="${interestedUrl}">YES, I'M INTERESTED</a>
+        <a class="btn btn-no" th:href="${notInterestedUrl}">NOT RIGHT NOW</a>
+    </div>
+    <p class="footer">Best regards,<br/>Talent Acquisition Team<br/>
+        <a th:href="${optOutUrl}">Opt out of future outreach</a>
+    </p>
+</div>
+</body>
+</html>

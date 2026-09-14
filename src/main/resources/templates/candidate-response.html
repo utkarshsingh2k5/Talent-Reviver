@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"/>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f6f8fb; padding: 40px; text-align: center; }
+        .container { max-width: 480px; margin: auto; background: #ffffff; border-radius: 12px; padding: 30px; border: 1px solid #e0e0e0; }
+        h2 { color: #2c3e50; }
+        p { color: #555; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 th:text="${title}">Thanks!</h2>
+    <p th:text="${message}">Your response has been recorded.</p>
+</div>
+</body>
+</html>
